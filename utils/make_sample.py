@@ -40,7 +40,7 @@ def main():
     for what in ['train', 'valid']:
         it = os.scandir(source)
         for d in it:
-            g = glob.glob(source + d.name + "/*.jpg")
+            g = glob.glob(source + "/" + d.name + "/*.jpg")
             if what == "train":
                 count = train
             elif what == "valid":
